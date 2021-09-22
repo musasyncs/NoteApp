@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import Firebase
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        let barAppearance = UINavigationBarAppearance()
+        barAppearance.configureWithTransparentBackground() // 移除毛玻璃
+        UINavigationBar.appearance().standardAppearance = barAppearance
+
         return true
     }
 
