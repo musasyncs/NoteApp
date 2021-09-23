@@ -17,6 +17,7 @@
 		BA2F046226F9AE4C00A06DA6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2F046126F9AE4C00A06DA6 /* Note.swift */; };
 		BA2F046826F9B2E800A06DA6 /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2F046726F9B2E800A06DA6 /* NotesManager.swift */; };
 		BA2F046A26F9B35B00A06DA6 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2F046926F9B35B00A06DA6 /* NoteViewController.swift */; };
+		BA80413526FC336B00925EEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA80413426FC336B00925EEC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BA2F046126F9AE4C00A06DA6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		BA2F046726F9B2E800A06DA6 /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
 		BA2F046926F9B35B00A06DA6 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		BA80413426FC336B00925EEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCB26F844694DC0A41C6436A /* Pods-Journal App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journal App.release.xcconfig"; path = "Target Support Files/Pods-Journal App/Pods-Journal App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				BA2F044926F9A7BC00A06DA6 /* AppDelegate.swift */,
 				BA2F044B26F9A7BC00A06DA6 /* SceneDelegate.swift */,
 				BA2F045226F9A7C000A06DA6 /* Assets.xcassets */,
+				BA80413426FC336B00925EEC /* GoogleService-Info.plist */,
 				BA2F045726F9A7C000A06DA6 /* Info.plist */,
 			);
 			path = "Journal App";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2F045626F9A7C000A06DA6 /* LaunchScreen.storyboard in Resources */,
+				BA80413526FC336B00925EEC /* GoogleService-Info.plist in Resources */,
 				BA2F045326F9A7C000A06DA6 /* Assets.xcassets in Resources */,
 				BA2F045126F9A7BC00A06DA6 /* Main.storyboard in Resources */,
 			);
