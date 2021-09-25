@@ -15,11 +15,7 @@ protocol NotesManagerProtocol {
 
 class NotesManager {
     var delegate: NotesManagerProtocol?
-    
     var listenerReg: ListenerRegistration?
-    deinit {
-        listenerReg?.remove()
-    }
     
     //得到note
     func getNotes(starredOnly: Bool = false) {
@@ -36,8 +32,8 @@ class NotesManager {
         listenerReg = query.addSnapshotListener { querySnapshot, error in
             if error == nil,  querySnapshot != nil {
                 var notes = [Note]()
-                for doc in querySnapshot!.documents {
-                    let note = Note(dic: doc.data())
+                for queryDocSnapshot in querySnapshot!.documents {
+                    let note = Note(dic: queryDocSnapshot.data())
                     notes.append(note)
                     notes.sort { note1, note2 in
                         let note1Date = note1.createdAt
