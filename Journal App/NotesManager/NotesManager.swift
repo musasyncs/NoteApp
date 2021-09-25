@@ -21,9 +21,6 @@ class NotesManager {
     func getNotes(starredOnly: Bool = false) {
         var query: Query = Firestore.firestore().collection("notes")
         
-        //每次進入 getNotes，listenerReg 要先移除再換成新的
-        listenerReg?.remove()
-        
         //starredOnly為真，query 只包含 isStarred 欄位為 true 的 documents
         if starredOnly {
             query = query.whereField("isStarred", isEqualTo: true)
